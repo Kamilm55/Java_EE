@@ -6,12 +6,14 @@ import java.util.Iterator;
 
 import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
+import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+@WebServlet(name = "Square",urlPatterns = {"/SqServlet"})
 public class SqServlet extends HttpServlet {
 //	Cookies and sessions
 //	are used by websites to store users' data across different pages of the site. The key difference between sessions and cookies is that sessions are saved on the server side while cookies are saved on the client side. Cookies are small text files used to store user information on the user's computer.
