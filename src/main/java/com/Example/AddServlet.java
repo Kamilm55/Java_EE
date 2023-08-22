@@ -13,6 +13,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+//@WebServlet(name = "Addservlet",urlPatterns = {"/add"})
 @WebServlet("/add")
 public class AddServlet extends HttpServlet
 {
@@ -24,9 +25,9 @@ public class AddServlet extends HttpServlet
 		
 		int result = num1 + num2;
 
-//		HttpSession session = req.getSession();
+//		HttpSession session = req.getSession();// Server-side process , client(browser) cannot see
 //		session.setAttribute("result",result );
-		Cookie cookie = new Cookie("result",Integer.toString(result));
+		Cookie cookie = new Cookie("result",Integer.toString(result));//client(browser) can see 
 		res.addCookie(cookie);
 		
 		res.sendRedirect("SqServlet");
