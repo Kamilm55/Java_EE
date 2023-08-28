@@ -28,5 +28,6 @@ throw new Exception(ex);
 %>
 
 <h1>Output is: <%=(result == 0 ? "Not dividing zero" : result)%> </h1>
+
 </body>
 </html>

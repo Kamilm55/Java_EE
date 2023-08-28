@@ -30,8 +30,6 @@ public int square (int a){return a*a;};
 	%>
 	<h2>Output is <% out.print(output); %></h2>
 	
-	
-	<c:import url="https://www.telusko.com"></c:import>
 <%-- 	<p>${var} + Some text</p>
 	<br>
 	<c:out value="request attribute:"/>	
