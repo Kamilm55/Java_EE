@@ -12,7 +12,7 @@
 	<h1>Data from MySql</h1>
 	<%
 	Class.forName("com.mysql.jdbc.Driver");
-	Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/resumeapp","root",);
+	Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/resumeapp","root","kamil29057202");
 	String query = "SELECT * from students ;";
 	Statement statement = connection.createStatement();
 	
