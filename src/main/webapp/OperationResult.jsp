@@ -12,9 +12,10 @@
 </head>
 <body>
 
-
-
 <h2>Operation result page</h2>
+<h3><c:out value="Square of number: ${squareNum}"/></h3>
+<h3><c:out value="Username: ${uName}"/></h3>
+
 <%-- <c:set var="str" value="Spring is a java framework"></c:set>
 <c:out value="str: ${str}"/> <br>
 <c:out value="Length of str: ${fn:length(str)}"/><br>
