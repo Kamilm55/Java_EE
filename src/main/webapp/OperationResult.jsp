@@ -12,17 +12,20 @@
 </head>
 <body>
 
-<c:set var="str" value="Spring is a java framework"></c:set>
+
+
+<h2>Operation result page</h2>
+<%-- <c:set var="str" value="Spring is a java framework"></c:set>
 <c:out value="str: ${str}"/> <br>
 <c:out value="Length of str: ${fn:length(str)}"/><br>
 <c:forEach var="s" items="${fn:split(str,' ')}">
 	<c:out value="${s}"/> <br>
-</c:forEach>
+</c:forEach> 
 
 <c:if test="${ fn:contains(str,'java') }">
 	Yes there is 'java'
 </c:if>
-
+--%>
 
 <%-- <sql:setDataSource var="db" password="kamil29057202" user="root" url="jdbc:mysql://localhost:3306/resumeapp" driver="com.mysql.jdbc.Driver"/>
 <sql:query var="rs" dataSource="${db}">SELECT * FROM students</sql:query>
