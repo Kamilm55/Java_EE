@@ -4,27 +4,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Videos</title>
 </head>
 <body>
-
 <%
 response.setHeader("Cache-Control","no-cache,must-revalidate,no-store");
 	if(session.getAttribute("userName")==null)
 		response.sendRedirect("./login.jsp");
 %>
-
-<h2>Home page</h2>
-<h3>Welcome ${userName}</h3>
-
-<a href="./videos.jsp">Link to videos</a>
+	<h1>Videos!</h1>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/OuBUUkQfBYM?si=Py3Pea-CJiJZfC27" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <form action="./logout" ><input type="submit" value="logout" /></form>
-<!-- <form action="./operations" method="post" > 
-	Enter 1st int number: <input type="text" name="num1" />	<br/> <br/>
-	Enter name: <input type="text" name="name" />	<br/><br/>
-	<input type="submit" />	
-</form> -->
-
-
 </body>
 </html>
